@@ -1,0 +1,16 @@
+package lesson13;
+
+public class Coin extends Entity {
+    Coin(MarioGame2HW s) {
+        panel = s;
+        width = 30;
+        height = 30;
+        imageFile = "mariomedia/mario_coin2.gif";
+        speed = 20;
+        x = 800;
+        y = (int)(Math.random()*500);
+    }
+    void move(){
+        x -= speed;
+    }
+}
